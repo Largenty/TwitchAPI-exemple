@@ -86,7 +86,9 @@ const TopStreams = () => {
 
     return (
         <div>
-            <hi className="titreGames">Stream les plus populaires</hi>
+            
+            <h1 className="titreGames">Stream les plus populaires</h1>
+            
             <div className="flexAccueil">
 
                 {channels.map((channel, index) => (
