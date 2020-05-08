@@ -19,8 +19,8 @@ const Games = () => {
       game.box_art_url = newUrl;
       return game;
       });
-
-      setGames(finalArray)
+     
+      setGames(finalArray.slice(0,18))
     }
 
     fetchData();
