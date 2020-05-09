@@ -377,7 +377,7 @@ PARTIE LIVE
   grid-area: 1 / 2 / 2 / 3;
   text-align: right;
   color: crimson;
-  font-weight: 400;
+  font-weight: 700;
   margin: 3px 5px 0 0;  
 }
 
@@ -386,5 +386,46 @@ PARTIE LIVE
   text-align: left;
   margin-left: 5px;
   font-weight: 400;
+}
+
+.nomJeu {
+  grid-area: 3 / 1 / 4 / 2;
+  text-align: left;
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .containerDecale {
+    padding-left: 0;
+  }
+  .contInfo {
+    width: calc(100%);
+  }
+  .viewer {
+    margin: 5px 25px 0 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+.contInfo {
+  grid-template: 45px 35px 35px 35px / 1fr 1fr;
+}
+  .titreStream {
+    font-size: 14px;
+  }
+  .nomJeu {
+    font-size: 14px;
+  }
+  .infoGame {
+    font-size: 14px;
+  }
+  .viewer {
+    font-size: 14px;
+    margin: 0 0 0 5px;
+    grid-area: 4 / 1 / 5 / 2;
+    text-align: left;
+  }
 }
 
